@@ -1,12 +1,19 @@
 package com.jse.swing;
 
-public class Member {
+public class MemberBean {
 
 	private String userid;
 	private String passwd;
 	private String name;
 	private int age;
 	//멤버 3명 회원가입
+	
+	public MemberBean(String userid, String passwd, String name, int age) {
+		this.userid= userid;
+		this.passwd= passwd;
+		this.name= name;
+		this.age = age;
+	}
 	
 	public void setUserId(String userid) {
 		this.userid = userid;

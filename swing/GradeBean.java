@@ -15,12 +15,19 @@ package com.jse.swing;
  학점입니다라고 출력되게 해주세요 
  * */
 
-public class Grade {
+public class GradeBean {
 
 	private String name;
 	private int kor;
 	private int eng;
 	private int math;
+	
+	public GradeBean(String name , int kor , int eng, int math) {
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+	}
 	
 	public void setName(String name) {
 		this.name = name;
