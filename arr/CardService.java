@@ -19,6 +19,14 @@ public class CardService {
 		return cards;
 	}
 	
+	public void setCount(int count) {
+		this.count = count;
+	}
+	
+	public int getCount() {
+		return count;
+	}
+	
 	public void add(CardBean card) {
 		cards[count] = card;
 		count++;
